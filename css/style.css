@@ -6,7 +6,6 @@
 a{
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
 }
 .main-card {
     width: 525px;
@@ -21,30 +20,33 @@ a{
     position: relative;
     transition: 0.5s all;
     transform-style: preserve-3d;
+    font-family: sans-serif;
 }
 
 .main-card:hover .card {
-    transform: rotateY(180deg);
+    transform: rotatey(180deg);
 }
 
 
 .child-front h1 {
     width: 60%;
-    font-family: 'Rusilla serif';
     color: #f5f6f7;
-    font-size: 52px;
-    letter-spacing: 5px;
+    font-size: 48px;
+    letter-spacing: 2px;
     text-align: center;
     align-self: flex-end;
+    text-transform: uppercase;
+    padding-bottom:2px ;
 }
 
 
 .child-front h5 {
     width: 60%;
-    font-family: 'Rusilla serif';
     color: #e5c975;
     font-size: 20px;
     text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .front,
@@ -82,11 +84,11 @@ a{
     align-items: center;
 }
 .backh1 {
-    font-family: 'Rusilla serif';
     color: #f5f6f7;
-    font-size: 52px;
-    letter-spacing: 5px;
+    font-size: 40px;
+    letter-spacing: 2px;
     text-align: center;
+    text-transform: uppercase;
     transform: translateX(-15px) translateY(125px) rotate(-90deg);
 }
 
@@ -94,22 +96,26 @@ a{
     font-size: 20px;
     color: #e5c975;
     padding-right: 15px;
-    
+}
+.cap{
+    text-transform: capitalize
 }
 p{
-    
+    display: flex;
+    align-items: center;
     padding: 5px 0px;
 }
 .backh5 {
-    width:115%;
-    transform: translateX(8px)translateY(80px) rotate(-90deg);
-    font-family: 'Rusilla serif';
+    width:140%;
+    transform: translateX(-10px)translateY(75px) rotate(-90deg);
     color: #e5c975;
-    font-size: 20.35px;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
     text-align: center;
 }
 .back {
     background: url("../img/abstract-dark-black-color-background-overlapping-layers-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg") center;
     background-size: cover;
-    transform: rotateY(180deg);
+    transform: rotatey(180deg);
 }
