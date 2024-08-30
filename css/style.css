@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
 }
 .main-card {
     width: 525px;
@@ -23,7 +24,7 @@ a{
 }
 
 .main-card:hover .card {
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
 }
 
 
@@ -52,8 +53,8 @@ a{
     height: 100%;
     background: rgb(233, 181, 160);
     background: linear-gradient(339deg, rgb(58, 54, 53) 0%, rgba(0, 0, 0, 1) 0%, rgb(48, 48, 45) 100%, rgba(255, 255, 255, 1) 100%);
-    /* position: absolute; */
-    /* backface-visibility: hidden; */
+    position: absolute;
+    backface-visibility: hidden;
     padding: 10px;
 }
 
@@ -76,8 +77,9 @@ a{
 }
 .detail{
     width: 70%;
-    border: 2px solid #c54c83;
     color: white;
+    display: flex;
+    align-items: center;
 }
 .backh1 {
     font-family: 'Rusilla serif';
@@ -95,7 +97,7 @@ a{
     
 }
 p{
-    font-size: 20px;
+    
     padding: 5px 0px;
 }
 .backh5 {
@@ -109,5 +111,5 @@ p{
 .back {
     background: url("../img/abstract-dark-black-color-background-overlapping-layers-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg") center;
     background-size: cover;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
 }
