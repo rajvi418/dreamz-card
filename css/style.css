@@ -203,12 +203,3 @@ p{
         
     }
 }
-
-@media (max-width: 500px) {
-    .main-card {
-        width: 100%;
-        height: 300px;
-        margin: 150px auto;
-        perspective: 500px;
-    }
-}
