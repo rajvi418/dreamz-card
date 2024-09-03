@@ -37,8 +37,33 @@ a{
     align-self: flex-end;
     text-transform: uppercase;
     padding-bottom:2px ;
+    animation: bordecolor 5s ease-in-out 1;
+    position: relative;
+    
 }
 
+.child-front h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    animation: af 5s ease-in-out infinite;
+    border-top: 4px solid red ;
+    border-left: 4px solid red;
+}
+.child-front h1::before {
+    content: "";
+    position: absolute;
+    bottom: -60%;
+    right: 0%;
+    width: 0%;
+    height: 0%;
+    animation: af 5s ease-in-out infinite;
+    border-bottom: 4px solid red ;
+    border-right: 4px solid red;
+}
 
 .child-front h5 {
     width: 60%;
@@ -47,6 +72,7 @@ a{
     text-align: center;
     font-weight: 500;
     text-transform: capitalize;
+    animation: bordecolor 5s ease-in-out 1;
 }
 
 .front,
@@ -66,7 +92,8 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 5px solid #e5c975;
+    border: 5px solid ;
+    animation: bordecolor 5s ease infinite ;
 }
 .child-back {
     width: 100%;
@@ -118,4 +145,60 @@ p{
     background: url("../img/abstract-dark-black-color-background-overlapping-layers-decor-golden-lines-with-copy-space-for-text-luxury-style-free-vector.jpg") center;
     background-size: cover;
     transform: rotatey(180deg);
+}
+@keyframes bordecolor {
+    0%{
+        border-color: #e5c975;
+        color: #e5c975;
+    }
+    20%{
+        border-color:#AD49E1 ;
+        color:#AD49E1 ;
+    }
+    40%{
+        border-color:#A0153E ;
+        color:#A0153E ;
+    }
+    60%{
+        border-color:#37B7C3 ;
+        color:#37B7C3 ;
+    }
+    80%{
+        border-color: #9DDE8B;
+        color: #9DDE8B;
+    }
+    100%{
+        border-color:#F1D00A ;
+        color:#F1D00A ;
+    }
+}
+@keyframes af {
+    0%{
+        border-color: #e5c975;
+        color: #e5c975;
+        width: 0%;
+        height: 0%;
+    }
+    20%{
+        border-color:#AD49E1 ;
+        color:#AD49E1 ;
+    }
+    40%{
+        border-color:#A0153E ;
+        color:#A0153E ;
+    }
+    60%{
+        border-color:#37B7C3 ;
+        color:#37B7C3 ;
+    }
+    80%{
+        border-color: #9DDE8B;
+        color: #9DDE8B;
+    }
+    100%{
+        border-color:#F1D00A ;
+        color:#F1D00A ;
+        width: 98%;
+        height: 150%;
+    }
 }
